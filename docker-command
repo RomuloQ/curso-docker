@@ -1,0 +1,22 @@
+dokcer image pull redis:latest
+docker image tag redis:latest img-teste
+docker image pull
+docker image push
+dokcer image ls
+docker image rm
+docker image tag
+docker redes
+
+none network
+ containes completamentes isolados
+
+ex :docker container run -d --net none debian
+docker container run --rm alpine ash -c "ifconfig"
+docker container run --rm --net none alpine ash -c "ifconfig"
+
+docker network create --driver bridge rede_novo
+docker container ruun -d --name containernovo --net rede_nova alpine sleep 1000
+docker network connect <nomedatede> containerX
+docker-compose down
+docker-compose up
+docker-compose exec db psql -U postgres -f /scripts/check.sql
